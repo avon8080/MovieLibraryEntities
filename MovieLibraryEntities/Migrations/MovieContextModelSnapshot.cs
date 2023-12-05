@@ -36,7 +36,7 @@ namespace MovieLibraryOO.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres", (string)null);
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("MovieLibraryEntities.Models.Movie", b =>
@@ -56,7 +56,7 @@ namespace MovieLibraryOO.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movies", (string)null);
+                    b.ToTable("Movies");
                 });
 
             modelBuilder.Entity("MovieLibraryEntities.Models.MovieGenre", b =>
@@ -79,7 +79,7 @@ namespace MovieLibraryOO.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("MovieGenres", (string)null);
+                    b.ToTable("MovieGenres");
                 });
 
             modelBuilder.Entity("MovieLibraryEntities.Models.Occupation", b =>
@@ -96,7 +96,7 @@ namespace MovieLibraryOO.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Occupations", (string)null);
+                    b.ToTable("Occupations");
                 });
 
             modelBuilder.Entity("MovieLibraryEntities.Models.User", b =>
@@ -125,7 +125,7 @@ namespace MovieLibraryOO.Migrations
 
                     b.HasIndex("OccupationId");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("MovieLibraryEntities.Models.UserMovie", b =>
@@ -154,7 +154,7 @@ namespace MovieLibraryOO.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserMovies", (string)null);
+                    b.ToTable("UserMovies");
                 });
 
             modelBuilder.Entity("MovieLibraryEntities.Models.MovieGenre", b =>
